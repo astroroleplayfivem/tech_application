@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Applications</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="portal-overlay" class="hidden overlay">
+        <div class="portal-shell shell">
+            <div class="shell-header themed-header">
+                <div class="header-brand">
+                    <div class="brand-icon" id="portal-business-icon"><i class="fa-solid fa-file-signature"></i></div>
+                    <div>
+                        <div class="eyebrow" id="portal-badge">Applications</div>
+                        <h1 id="portal-title">Business Applications</h1>
+                        <p id="portal-headline" class="sub-title">Apply, track updates, and check your interview details.</p>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <button id="close-portal" class="close-btn"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            <div class="portal-content">
+                <aside class="portal-sidebar">
+                    <button class="side-btn active" data-tab="apply"><i class="fa-solid fa-file-signature"></i> Apply</button>
+                    <button class="side-btn" data-tab="myapps"><i class="fa-solid fa-folder-open"></i> My Applications</button>
+                    <button class="side-btn" data-tab="tips"><i class="fa-solid fa-lightbulb"></i> Hiring Tips</button>
+                    <div class="sidebar-note">
+                        <strong id="portal-job-title">Position</strong>
+                        <p>Come back here anytime to check your status, interview info, and update notes.</p>
+                    </div>
+                </aside>
+                <main class="portal-main">
+                    <section class="tab-panel" id="tab-apply">
+                        <form id="application-form" class="application-form">
+                            <div class="grid two-col">
+                                <div class="card intro-card full-span">
+                                    <div class="card-head">
+                                        <span class="pill">Recruitment</span>
+                                        <span class="muted" id="previous-count-copy">No previous applications on file.</span>
+                                    </div>
+                                    <h2 id="apply-heading">Application Form</h2>
+                                    <p class="muted">Your previous applications are tracked, including interview notes, so managers can see your history and growth.</p>
+                                </div>
+
+                                <div class="field-group"><label>Full Name</label><input type="text" name="fullName" maxlength="60"><span class="error-message"></span></div>
+                                <div class="field-group"><label>Age</label><input type="number" name="age" min="16" max="90"><span class="error-message"></span></div>
+                                <div class="field-group"><label>Date of Birth</label><input type="date" name="dateOfBirth"><span class="error-message"></span></div>
+                                <div class="field-group"><label>Phone Number</label><input type="text" name="phone" maxlength="30"><span class="error-message"></span></div>
+                                <div class="field-group"><label>Gender</label><select name="gender"><option value="">Select</option><option>Male</option><option>Female</option><option>Other</option><option>Prefer not to say</option></select><span class="error-message"></span></div>
+                                <div class="field-group"><label>Discord Username</label><input type="text" name="discord" maxlength="32"><span class="error-message"></span></div>
+                                <div class="field-group"><label>Discord ID</label><input type="text" name="discordId" maxlength="19"><span class="error-message"></span></div>
+                                <div class="field-group"><label>Experience</label><select name="experience"><option value="">Select</option><option>Yes - Extensive (5+ years)</option><option>Yes - Moderate (2-5 years)</option><option>Yes - Limited (Less than 2 years)</option><option>No - But eager to learn</option><option>No experience</option></select><span class="error-message"></span></div>
+                                <div class="field-group"><label>Availability</label><select name="availability"><option value="">Select</option><option>Full-time</option><option>Part-time</option><option>Flexible</option><option>Weekends only</option></select><span class="error-message"></span></div>
+                                <div class="field-group full-span"><label>Motivation</label><textarea name="motivation" maxlength="700"></textarea><div class="char-count"><span id="motivation-count">0</span>/700</div><span class="error-message"></span></div>
+                                <div class="field-group full-span"><label>References / Additional Information</label><textarea name="references" maxlength="500"></textarea><div class="char-count"><span id="references-count">0</span>/500</div></div>
+                            </div>
+                            <div class="form-actions">
+                                <button type="button" id="cancel-portal" class="btn ghost">Close</button>
+                                <button type="button" id="submit-application" class="btn primary"><i class="fa-solid fa-signature"></i> Submit Application</button>
+                            </div>
+                        </form>
+                    </section>
+
+                    <section class="tab-panel hidden" id="tab-myapps">
+                        <div class="split-layout">
+                            <div class="card applications-column">
+                                <div class="card-head spaced">
+                                    <div>
+                                        <h2>My Applications</h2>
+                                        <p class="muted">Open any previous application to see status, interview details, and update history.</p>
+                                    </div>
+                                    <button id="refresh-myapps" class="btn ghost small"><i class="fa-solid fa-rotate"></i></button>
+                                </div>
+                                <div id="myapps-list" class="list-stack"></div>
+                            </div>
+                            <div class="card detail-column">
+                                <div id="myapps-empty" class="empty-state">
+                                    <i class="fa-solid fa-folder-open"></i>
+                                    <h3>No application selected</h3>
+                                    <p>Choose one from the left to view your full status timeline.</p>
+                                </div>
+                                <div id="myapps-detail" class="hidden">
+                                    <div class="detail-top">
+                                        <div>
+                                            <h2 id="myapp-name">Application</h2>
+                                            <p id="myapp-meta" class="muted"></p>
+                                        </div>
+                                        <span id="myapp-status" class="status-pill">pending</span>
+                                    </div>
+                                    <div id="myapp-notice" class="notice-banner hidden"></div>
+                                    <div class="grid two-col" id="myapp-detail-grid"></div>
+                                    <div class="card timeline-card">
+                                        <div class="card-head"><h3>History & Interview Notes</h3></div>
+                                        <div id="myapp-history" class="timeline"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="tab-panel hidden" id="tab-tips">
+                        <div class="grid two-col">
+                            <div class="card full-span">
+                                <div class="card-head"><h2>Make your application hit harder</h2></div>
+                                <p class="muted">Managers can now see if you applied before, what happened in your last interview, and whether you improved. Use that to your advantage.</p>
+                            </div>
+                            <div class="card"><h3>1. Mention your growth</h3><p>Applied before and got denied? Say what changed. New RP confidence, more availability, cleaner comms, better city knowledge â€” spell it out.</p></div>
+                            <div class="card"><h3>2. Interview notes matter</h3><p>If the staff left interview notes before, they can compare them to your new application. Show progress instead of resending the same pitch.</p></div>
+                            <div class="card"><h3>3. Match the business vibe</h3><p>Mechanic apps should sound different from EMS or nightlife apps. Keep the tone fitting the job you want.</p></div>
+                            <div class="card"><h3>4. Keep contact info right</h3><p>If your Discord or phone is wrong, you will miss interview updates and think nobody got back to you.</p></div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <div id="management-overlay" class="hidden overlay">
+        <div class="management-shell shell">
+            <div class="shell-header">
+                <div>
+                    <div class="eyebrow">Hiring Manager</div>
+                    <h1 id="management-title">Applications Manager</h1>
+                    <p class="sub-title">Review applications, compare repeat applicants, set interviews, and leave update notes.</p>
+                </div>
+                <div class="header-actions">
+                    <button id="refresh-management" class="btn ghost small"><i class="fa-solid fa-rotate"></i> Refresh</button>
+                    <button id="close-management" class="close-btn"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            <div class="management-content">
+                <aside class="management-sidebar">
+                    <input id="management-search" type="text" placeholder="Search name, discord, phone...">
+                    <select id="management-status-filter">
+                        <option value="all">All statuses</option>
+                        <option value="pending">Pending</option>
+                        <option value="interview">Interview</option>
+                        <option value="accepted">Accepted</option>
+                        <option value="denied">Denied</option>
+                    </select>
+                    <div id="applications-list" class="list-stack"></div>
+                </aside>
+                <section class="management-main">
+                    <div id="application-empty" class="empty-state">
+                        <i class="fa-solid fa-clipboard-list"></i>
+                        <h3>No application selected</h3>
+                        <p>Pick one from the left to review the application and compare their previous attempts.</p>
+                    </div>
+                    <div id="application-detail" class="hidden">
+                        <div class="detail-top">
+                            <div>
+                                <h2 id="detail-name">Applicant</h2>
+                                <p id="detail-meta" class="muted"></p>
+                            </div>
+                            <span id="detail-status" class="status-pill">pending</span>
+                        </div>
+                        <div id="detail-grid" class="grid two-col"></div>
+                        <div class="grid two-col manager-edit-grid">
+                            <div class="field-group"><label>Status</label><select id="manager-status"><option value="pending">Pending</option><option value="interview">Interview</option><option value="accepted">Accepted</option><option value="denied">Denied</option></select></div>
+                            <div class="field-group"><label>Interview Time</label><input id="manager-interview-at" type="text" placeholder="Friday 8PM"></div>
+                            <div class="field-group"><label>Interview Location</label><input id="manager-interview-location" type="text" placeholder="MRPD briefing room"></div>
+                            <div class="field-group"><label>Visible Applicant Update</label><input id="manager-applicant-notes" type="text" placeholder="What the applicant should know next"></div>
+                            <div class="field-group full-span"><label>Interview Instructions / Notes</label><textarea id="manager-interview-notes" rows="3" placeholder="Who they report to, what to bring, what happened in the interview..."></textarea></div>
+                            <div class="field-group full-span"><label>Private Manager Notes</label><textarea id="manager-notes" rows="4" placeholder="Only managers see this."></textarea></div>
+                        </div>
+                        <div class="card timeline-card">
+                            <div class="card-head"><h3>Previous History for This Applicant</h3></div>
+                            <div id="manager-history" class="timeline"></div>
+                        </div>
+                        <div class="form-actions"><button id="save-application" class="btn primary"><i class="fa-solid fa-floppy-disk"></i> Save Update</button></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
