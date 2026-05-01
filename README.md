@@ -1,139 +1,158 @@
-# Tech Application - Job Application System / Updated by Astro RP
+# Tech Application - Astro Upgraded Job Application System
 
-##  Support
+A modern FiveM job application system that allows players to apply for businesses, departments, and city jobs through an in-game application portal.
 
-### Getting Help
+This version has been edited, upgraded, and expanded by **Opie Winters / Astro Scripts** with a redesigned workflow, application tracking, management tools, themed businesses, applicant history, interview updates, and improved roleplay usability.
 
-* [Discord](https://discord.gg/DWdM4h7xbj)
-* [Tebex Store](https://tshentro.tebex.io/package/7069099)
-* [ Youtube](https://www.youtube.com/watch?v=M_XJmeTAxr8)
+---
 
-### Astro Scripts 
-Discord : https://discord.gg/PDZ9cYkAXk
-Tebex :  https://astro-scripts-webstore.tebex.io/category/3287949
-Youtube : https://www.youtube.com/@astrocodeslua
+## Credits
 
+**Original Author:** TshentroTech  
+**Original Resource:** Tech Application  
+
+**Edited / Upgraded By:** Opie Winters  
+**Brand:** Astro Scripts / Astro Roleplay  
+
+Please respect the original creator while recognizing this version as the upgraded Astro edit.
+
+---
+
+## Astro Scripts Links
+
+**Discord:**  
+https://discord.gg/PDZ9cYkAXk
+
+**Tebex:**  
+https://astro-scripts-webstore.tebex.io/category/3287949
+
+**YouTube:**  
+https://www.youtube.com/@astrocodeslua
+
+---
 
 ## Overview
 
-Tech Application is a comprehensive job application system for FiveM servers that allows players to apply for various jobs through an interactive, multi-language web interface with Discord webhook integration. This has been completed upgraded by Opie Winters & Astro Roleplay. 
+Tech Application is a FiveM job application system built for roleplay servers that want a clean and organized way for players to apply for jobs.
+
+Players can walk up to configured application locations, interact with a PED or target zone, open a themed application portal, fill out their information, and submit an application directly in-game.
+
+Managers and bosses can review submitted applications through a management panel, update application statuses, schedule interviews, leave notes for applicants, and track previous applications from the same player.
+
+This makes hiring more organized, immersive, and useful for businesses, whitelisted jobs, departments, and server staff teams.
 
 ---
 
-## Features
+## Main Features
 
-### Core Functionality
-- **Interactive Job Applications**: Beautiful, responsive web interface for job applications
-- **Multiple Business Support**: Configure unlimited businesses with different application locations
-- **Discord Webhook Integration**: Automatic submission of applications to Discord channels with professional formatting
-- **Real-time Form Validation**: Client-side and server-side validation with error messages
-- **Character Counter**: Live character counting for text areas
-- **Digital Signature**: Animated signing process for form submission
-
-### Multi-language Support
-- **4 Languages**: English, French, Spanish, Arabic
-- **Dynamic Language Switching**: Players can change language during application
-- **Comprehensive Translations**: All UI elements, labels, and messages translated
-
-### User Experience
-- **Modern UI Design**: Clean, professional interface with handwriting-style inputs
-- **Responsive Design**: Works on all screen sizes
-- **Smooth Animations**: Form transitions, signing animations, and success messages
-- **Keyboard Navigation**: ESC key to close, tab navigation support
-- **Paper-like Appearance**: Realistic form styling with subtle textures
-
-### Technical Features
-- **Target System Support**: Compatible with both QB-Target and OX-Target
-- **NPC Integration**: Optional NPCs at application locations
-- **Player Identification**: Automatic collection of player identifiers
-- **Error Handling**: Comprehensive error handling and logging
-- **Performance Optimized**: Efficient resource usage
-- **Security**: Server-side validation and input sanitization
-
----
-
-### Screenshot Requirements:
-1. **Main Preview Image**: Form interface showing the application form
-2. **Multi-language Support**: Show language selector in action
-3. **Discord Integration**: Show Discord webhook embed example
-4. **In-game Usage**: Show NPC interaction or target system
-5. **Form Validation**: Show validation errors/messages
+- In-game job application portal
+- Multiple configurable businesses
+- Business-specific application locations
+- Optional PED interaction at each location
+- Target zone support
+- Themed UI per business
+- Application tracking for players
+- Previous application history
+- Player “My Applications” tab
+- Management panel for bosses/staff
+- Review submitted applications
+- Search applications by applicant details
+- Filter applications by status
+- Update application status
+- Schedule interview date/time
+- Add interview location
+- Add interview instructions
+- Add manager-only notes
+- Add visible applicant update notes
+- Live applicant notifications when an application is updated
+- Discord webhook support
+- JSON-based application storage
+- No SQL database required
+- Server-side validation
+- Input sanitization
+- Character counters
+- ESC close support
+- Clean NUI interface
+- Supports `qb-target`
+- Supports `ox_target`
 
 ---
 
-## Installation
+## Player Features
 
-### Prerequisites
-- FiveM Server
-- QBCore Framework (or compatible framework)
-- Target System (QB-Target or OX-Target)
-- ox_lib (for shared scripts)
+Players can:
 
-### Installation Steps
-
-2. **Add to server.cfg**
-   ```cfg
-   ensure tech_application
-   ```
-
-3. **Install Dependencies**
-   - Ensure you have `ox_lib` installed
-```
-4. Config Options 
-
-    catcafe = {
-        businessType = "catcafe",
-        businessName = "Cat Cafe",
-        webhook = "",
-        jobTitle = "Cook",
-        theme = {
-            icon = 'fa-solid fa-cat',
-            badge = 'Cafe Hiring',
-            accent = '#ec4899',
-            accentSoft = 'rgba(236,72,153,0.18)',
-            panel = '#3f1d2e',
-            panel2 = '#111827',
-            headline = 'Soft vibe, steady service, and clean food roleplay.',
-            applyLabel = 'Apply to Cat Cafe',
-        },
-        locations = {
-            { name = "catcafe_frontdesk", label = "Cat Cafe Applications", coords = vector4(-582.54, -1070.55, 22.33, 187.68), ped = true, pedModel = "s_m_m_lathandy_01" }
-        }
-    },
-}
----
-
-## Multi-language Support
-
-### Supported Languages
-
-- **English (en)**: Default language
-- **French (fr)**: FranÃ§ais
-- **Spanish (es)**: EspaÃ±ol
-- **Arabic (ar)**: Ø§Ù„Ø¹Ø±Ø¨ÙŠØ©
-
-Players can switch languages dynamically using the language selector in the form header.
+- Apply for configured city jobs
+- Submit their full name, age, phone number, Discord, experience, availability, motivation, and references
+- Track applications they already submitted
+- View application status
+- View interview details when a manager updates the application
+- See notes sent by management
+- Review previous applications for the same business
+- Receive live notifications when their application is updated
 
 ---
 
-## Performance
+## Management Features
 
-### Resource Usage
-- **Client-side**: Minimal impact, only active when form is open
-- **Server-side**: Efficient event handling, minimal processing overhead
-- **Network**: Only sends data when form is submitted
+Authorized managers can:
 
-### Optimization Tips
-- Limit the number of NPCs spawned
-- Use appropriate target zone sizes
-- Configure only necessary businesses
+- Open the application management panel
+- View all applications for their business
+- Review applicant information
+- See repeat applicant history
+- Search applications
+- Filter by status
+- Accept applications
+- Deny applications
+- Mark applications for interview
+- Set interview time
+- Set interview location
+- Add interview instructions
+- Leave internal manager notes
+- Send visible update notes to the applicant
+- Trigger Discord webhook updates
 
 ---
 
+## Application Statuses
 
-## API Reference
+The script supports application status tracking such as:
+
+- Pending
+- Interview
+- Accepted
+- Denied
+
+Managers can update an application and the applicant can view the latest status from the same application location.
 
 ---
 
-## Acknowledgments
-- **TshentroTech**: Original author
+## Framework
+
+This resource is built for:
+
+- QBCore
+
+---
+
+## Dependencies
+
+Required:
+
+- `qb-core`
+- `ox_lib`
+
+Optional target systems:
+
+- `qb-target`
+- `ox_target`
+
+---
+
+## Storage
+
+Applications are saved using a JSON file:
+
+```lua
+data/applications.json
