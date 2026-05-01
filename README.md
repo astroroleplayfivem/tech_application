@@ -156,3 +156,9 @@ Applications are saved using a JSON file:
 
 ```lua
 data/applications.json
+
+
+
+<img width="1395" height="1004" alt="main jobapp" src="https://github.com/user-attachments/assets/8ca3429d-adfa-4e0d-8972-e7f4e96f5a84" />
+<img width="1248" height="846" alt="burrgershotapp" src="https://github.com/user-attachments/assets/a2e6ce6e-8a2a-45dc-ad50-a4d18c2e9fa0" />
+<img width="1418" height="991" alt="myapplications" src="https://github.com/user-attachments/assets/2445907d-1d63-499e-93b2-b28790b6c0c1" />
