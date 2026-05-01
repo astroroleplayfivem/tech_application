@@ -1,0 +1,265 @@
+[
+    {
+        "id": "app_1775836514_4252",
+        "previousCount": 0,
+        "history": [
+            {
+                "action": "submitted",
+                "src": 1,
+                "at": "2026-04-10T15:55:14Z",
+                "by": "DOC",
+                "note": "Application submitted. Previous applications for this business: 0"
+            },
+            {
+                "action": "updated",
+                "src": 1,
+                "at": "2026-04-10T15:55:43Z",
+                "by": "DOC",
+                "note": "Status: interview  Interview: Firday  Update: Interview Stages"
+            },
+            {
+                "action": "viewed",
+                "src": 1,
+                "at": "2026-04-10T15:55:49Z",
+                "by": "DOC",
+                "note": "Applicant reviewed latest updates."
+            }
+        ],
+        "createdAt": "2026-04-10T15:55:14Z",
+        "unreadApplicantUpdates": 0,
+        "jobTitle": "Tequilala Employee",
+        "status": "interview",
+        "businessName": "Tequilala",
+        "businessKey": "tequilala",
+        "businessType": "tequilala",
+        "theme": {
+            "badge": "Venue Hiring",
+            "accentSoft": "rgba(168,85,247,0.18)",
+            "icon": "fa-solid fa-martini-glass-citrus",
+            "panel2": "#0f172a",
+            "applyLabel": "Apply to Tequilala",
+            "accent": "#a855f7",
+            "headline": "Hospitality, nightlife energy, and good customer memory.",
+            "panel": "#1f1335"
+        },
+        "management": {
+            "updatedBy": "DOC",
+            "updatedAt": "2026-04-10T15:55:43Z",
+            "managerNotes": "I LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICK",
+            "applicantNotes": "Interview Stages",
+            "interviewAt": "Firday",
+            "interviewNotes": "I LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICK",
+            "interviewLocation": "Tequlal",
+            "interviewInstructions": ""
+        },
+        "applicant": {
+            "phone": "2242525252",
+            "experience": "Yes - Extensive (5+ years)",
+            "age": 27,
+            "dateOfBirth": "1998-03-02",
+            "fivem": "4951645",
+            "fullName": "Opie Winters",
+            "license": "a2e39237954f60acdc3011b58d70193e5d10a1c4",
+            "discordId": "3253531531513531513",
+            "motivation": "I LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICK",
+            "discord": "wrcki",
+            "gender": "Female",
+            "availability": "Full-time",
+            "serverName": "DOC",
+            "citizenid": "VEB77293",
+            "references": "I LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICKI LOVE DICK"
+        }
+    },
+    {
+        "id": "app_1775846743_2509",
+        "previousCount": 0,
+        "history": [
+            {
+                "action": "submitted",
+                "src": 3,
+                "at": "2026-04-10T18:45:43Z",
+                "by": "DOC",
+                "note": "Application submitted. Previous applications for this business: 0"
+            },
+            {
+                "action": "updated",
+                "src": 3,
+                "at": "2026-04-10T18:46:38Z",
+                "by": "DOC",
+                "note": "Status: interview  Interview: NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN"
+            },
+            {
+                "action": "updated",
+                "src": 3,
+                "at": "2026-04-10T18:46:44Z",
+                "by": "DOC",
+                "note": "Status: accepted  Interview: NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN"
+            }
+        ],
+        "createdAt": "2026-04-10T18:45:43Z",
+        "unreadApplicantUpdates": 2,
+        "jobTitle": "Burger Shot Employee",
+        "status": "accepted",
+        "businessKey": "burgershot",
+        "applicant": {
+            "phone": "2425252525",
+            "citizenid": "VEB77293",
+            "age": 23,
+            "experience": "Yes - Extensive (5+ years)",
+            "fivem": "4951645",
+            "fullName": "OPIE",
+            "license": "a2e39237954f60acdc3011b58d70193e5d10a1c4",
+            "serverName": "DOC",
+            "motivation": "I LOVE EVERYONEI LOVE EVERYONEI LOVE EVERYONEI LOVE EVERYONEI LOVE EVERYONEI LOVE EVERYONEI LOVE EVERYONEI LOVE EVERYONEI LOVE EVERYONEI LOVE EVERYONEI LOVE EVERYONEI LOVE EVERYONE",
+            "discord": "WRCKI",
+            "gender": "Male",
+            "availability": "Full-time",
+            "dateOfBirth": "1998-03-04",
+            "references": "I LOVE EVERYONEI LOVE EVERYONEI LOVE EVERYONEI LOVE EVERYONEI LOVE EVERYONEI LOVE EVERYONEI LOVE EVERYONEI LOVE EVERYONEI LOVE EVERYONE",
+            "discordId": "2525252525"
+        },
+        "businessType": "burgershot",
+        "theme": {
+            "icon": "fa-solid fa-burger",
+            "accentSoft": "rgba(251,146,60,0.18)",
+            "badge": "Crew Hiring",
+            "panel2": "#111827",
+            "applyLabel": "Apply to Burger Shot",
+            "accent": "#fb923c",
+            "headline": "Fast service, kitchen hustle, and clean customer RP.",
+            "panel": "#1c1917"
+        },
+        "management": {
+            "updatedBy": "DOC",
+            "interviewInstructions": "",
+            "managerNotes": "",
+            "applicantNotes": "",
+            "interviewNotes": "",
+            "interviewAt": "NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN",
+            "interviewLocation": "NNNNNNNNNNNNNNN",
+            "updatedAt": "2026-04-10T18:46:44Z"
+        },
+        "businessName": "Burger Shot"
+    },
+    {
+        "id": "app_1776129816_6888",
+        "previousCount": 0,
+        "history": [
+            {
+                "action": "submitted",
+                "src": 19,
+                "at": "2026-04-14T01:23:36Z",
+                "note": "Application submitted. Previous applications for this business: 0",
+                "by": "MoodyCrab9282"
+            },
+            {
+                "action": "updated",
+                "src": 35,
+                "at": "2026-04-14T01:33:19Z",
+                "note": "Status: accepted",
+                "by": "VacationPika"
+            }
+        ],
+        "createdAt": "2026-04-14T01:23:36Z",
+        "unreadApplicantUpdates": 1,
+        "jobTitle": "Cook",
+        "status": "accepted",
+        "businessKey": "catcafe",
+        "applicant": {
+            "phone": "5205617051",
+            "experience": "No - But eager to learn",
+            "discordId": "0000",
+            "citizenid": "NKM93195",
+            "fivem": "18830935",
+            "fullName": "Rune Lacha",
+            "license": "d41a480c9acf9a2ba3387a3a8dc3b3a1a7eb8ef8",
+            "serverName": "MoodyCrab9282",
+            "motivation": "New to the city and eager to learn, I love cats and meeting people!",
+            "discord": "MysticRune23",
+            "gender": "Female",
+            "availability": "Part-time",
+            "dateOfBirth": "2002-02-23",
+            "references": "(im not sure what the discord id is so ask me if needed)\n\n",
+            "age": 23
+        },
+        "businessName": "Cat Cafe",
+        "theme": {
+            "badge": "Cafe Hiring",
+            "accentSoft": "rgba(236,72,153,0.18)",
+            "icon": "fa-solid fa-cat",
+            "panel2": "#111827",
+            "applyLabel": "Apply to Cat Cafe",
+            "accent": "#ec4899",
+            "headline": "Soft vibe, steady service, and clean food roleplay.",
+            "panel": "#3f1d2e"
+        },
+        "management": {
+            "updatedBy": "VacationPika",
+            "updatedAt": "2026-04-14T01:33:19Z",
+            "managerNotes": "",
+            "applicantNotes": "",
+            "interviewNotes": "",
+            "interviewAt": "",
+            "interviewLocation": "",
+            "interviewInstructions": ""
+        },
+        "businessType": "catcafe"
+    },
+    {
+        "id": "app_1776473758_8261",
+        "previousCount": 0,
+        "createdAt": "2026-04-18T00:55:58Z",
+        "history": [
+            {
+                "action": "submitted",
+                "src": 17,
+                "at": "2026-04-18T00:55:58Z",
+                "note": "Application submitted. Previous applications for this business: 0",
+                "by": "Aaron Garrison"
+            }
+        ],
+        "unreadApplicantUpdates": 0,
+        "jobTitle": "Burger Shot Employee",
+        "theme": {
+            "badge": "Crew Hiring",
+            "accentSoft": "rgba(251,146,60,0.18)",
+            "accent": "#fb923c",
+            "panel2": "#111827",
+            "applyLabel": "Apply to Burger Shot",
+            "icon": "fa-solid fa-burger",
+            "headline": "Fast service, kitchen hustle, and clean customer RP.",
+            "panel": "#1c1917"
+        },
+        "applicant": {
+            "phone": "4805280096",
+            "citizenid": "GUI31495",
+            "age": 26,
+            "license": "6778bfda55aa98c1fbbd635cdcb9980022e70729",
+            "fivem": "4880529",
+            "fullName": "Aaron Garrison",
+            "gender": "Male",
+            "discordId": "1384580053307756649",
+            "motivation": "my motivations are to helo the people in the burgershot \nmotivation is get stuff done with what i want done  ",
+            "discord": "garret12",
+            "availability": "Full-time",
+            "experience": "Yes - Extensive (5+ years)",
+            "serverName": "Aaron Garrison",
+            "references": "",
+            "dateOfBirth": "1999-05-08"
+        },
+        "businessKey": "burgershot",
+        "businessType": "burgershot",
+        "status": "pending",
+        "management": {
+            "updatedBy": "",
+            "interviewInstructions": "",
+            "managerNotes": "",
+            "applicantNotes": "",
+            "updatedAt": "2026-04-18T00:55:58Z",
+            "interviewAt": "",
+            "interviewLocation": "",
+            "interviewNotes": ""
+        },
+        "businessName": "Burger Shot"
+    }
+]
